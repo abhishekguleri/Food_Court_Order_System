@@ -106,9 +106,11 @@ public class Main {
                 "Fresh lime Water Sweet / Salt   \t60/-\033[0m\n" +
 
                 "\n please enter your order:::------>>>>\n");
-        System.out.println("\033[1;41m enter your response:\033[0m");
+         System.out.println("\033[1;41m enter your response:\033[0m");
         String order = input.nextLine();
-        System.out.println("your order is: \n\033[1;34m" + order);
+        System.out.println("please enter your table number:--");
+        String table = input.nextLine();
+        System.out.println("your order is: \n\033[1;34m" + order + " \nand \033[1;44m  your table number is: " + table+"/033[0m");
         System.out.println("\033[0m thanks you foodie!!!!!");
     }
 
