@@ -139,7 +139,6 @@ public class Main {
         } else {
             System.out.println("you check your bill while paying");
         }
-        System.out.println("your total is : " + sum);
         System.out.println("\033[0m thanks you foodie!!!!!");
 
     }
