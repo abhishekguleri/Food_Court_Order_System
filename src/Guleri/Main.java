@@ -110,8 +110,38 @@ public class Main {
         String order = input.nextLine();
         System.out.println("please enter your table number:--");
         String table = input.nextLine();
-        System.out.println("your order is: \n\033[1;34m" + order + " \nand  your table number is: " + table);
+        System.out.println("your order is: \n\033[1;34m" + order + " \033[0m\nand \033[1;34m  your table number is: " + table+"\033[0m");
+        System.out.println("do you want to calualate the bill: \033[1;34m y\033[0m or \033[1;34m n\033[0m\n enter your response: ");
+        char response= input.next().charAt(0);
+        int sum=0;
+        if(response=='y'){
+            System.out.println("enter number of the order\033[1;32m(including multiple same items should be taking single order)\033[0m");
+
+            int n=input.nextInt();
+
+            int arr[]=new int[n];
+
+            System.out.println("enter items");
+
+            for(int i=0;i<n;i++){
+                arr[i]=input.nextInt();
+
+            }
+
+            for(int i: arr){
+
+
+             sum=sum+i;
+
+            }
+
+        }
+        else{
+            System.out.println("you check your bill while paying");
+        }
+        System.out.println("your total is : "+sum);
         System.out.println("\033[0m thanks you foodie!!!!!");
+
     }
 
 }
